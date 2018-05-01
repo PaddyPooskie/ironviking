@@ -26,8 +26,8 @@ body, html {
   display: flex;
   width: 100%;
   color: #ffffff;
-  background-color:#000000;
-  justify-content: space-between;
+  background-color:#141414;
+
   justify-content: space-around;
 }
 
@@ -47,6 +47,7 @@ body, html {
   background-size: cover;
   min-height: 100%;
   width: 50%;
+  text-decoration: none;
 }
 
 .storebg {
@@ -58,7 +59,7 @@ body, html {
 }
 
 .homecontainer {
-  background-color: #141414;
+  background-color: #acb4c1;
   opacity: 0.8;
   height: 100%;
   font-size: 2em;

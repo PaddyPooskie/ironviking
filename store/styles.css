@@ -1,0 +1,23 @@
+/*
+Developer: Patrick Flynn
+Date: ---
+Website: Iron Viking Store
+--------------
+notes:
+Logo Hex color values= #374fce(blue-ish)
+                       #141414(light black)
+*/
+body, html {
+  background-color: #141414;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+body{
+  background-image: url(background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100%;
+}
