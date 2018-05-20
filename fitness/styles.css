@@ -45,12 +45,11 @@ body {
 
 .button{
   position:relative;
-  top: -90%;
+  top: -15%;
   left: 4%;
   display: inline-block;
   font-size: 25px;
   font-weight: bold;
-  /*background: linear-gradient(#374fce, #dddddd);*/
   background-color: #374fce;
 }
 .button a{
@@ -62,7 +61,6 @@ body {
 
 .button a:hover{
   background: linear-gradient(#344aba, #dddddd);
-
   height: 100%;
   text-decoration: none;
   background-color: rgba(45,45,45,0);
@@ -70,7 +68,7 @@ body {
 }
 
 .mainBanner{
-  background-image: url(background.jpg);
+  background-image: url(griffis.png);
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,8 +141,8 @@ li a:hover.active {
 }
 
 .active {
-  background-color: #374fce !important;
-  color: #ffffff !important;
+  background-color: #374fce;
+  color: #ffffff;
 }
 
 .dropbtn {
@@ -207,7 +205,9 @@ li a.smTag:hover {
   color: #ffffff;
 }
 
-/* Features below Navigation Bar */
+/* ------------------------------------
+Features below Navigation Bar
+----------------------------------*/
 
 .features{
   display: flex;
@@ -230,40 +230,70 @@ li a.smTag:hover {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
-  height: 300px
+  background-size:contain;
+  height: 300px;
 }
 
 .feature1{
-  background-image: url(womanLifting.jpg);
-  height:630px;
+  height: 630px;
 }
 
-.feature2{
-  background-image: url(pushUp.jpg);
+/*-----------------------------
+Image Models
+------------------------------*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
 }
 
-.feature3{
-  background-image: url(kidsRunning.jpg);
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
-.featureSmall a, .featureLarge a{
-  font-size: 30px;
-  font-style: oblique;
-  background-color: rgba(45,45,45,0.4);
-  padding: 15px;
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 35px;
-  border-bottom: solid;
-  border-width: thin;
-  position: relative;
-  top: 75%;
-  left: 30px;
+.column img:hover {
+    opacity: 1;
 }
 
-/* Footer Styles */
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.imgcontainer {
+    position: relative;
+    right: 55%;
+    top:100%;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: -300px;
+    color: #000000;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*----------------------------------
+ Footer Styles
+------------------------------------*/
 
 footer{
   background-color: rgb(45,45,45);
