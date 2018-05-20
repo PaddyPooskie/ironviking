@@ -9,7 +9,7 @@ Logo Hex color values= #374fce(blue-ish)
 */
 
 body, html {
-  background-color: #374fce;
+  background-color:rgba(45,45,45, 0);
   color: #ffffff;
   font-family: 'Lato', sans-serif;
   height: 100%;
@@ -41,6 +41,40 @@ body {
   position: relative;
   top: -18%;
   width: 150px;
+}
+
+.button{
+  position:relative;
+  top: -20%;
+  left: 5%;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background: linear-gradient(#374fce, #dddddd);
+}
+.button a{
+  color: #141414;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.button a:hover{
+  background: linear-gradient(#344aba, #dddddd);
+  border-radius: 10px;
+  height: 100%;
+  text-decoration: none;
+  color: #141414;
+}
+
+.mainBanner{
+  background-image: url(background.jpg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 500px;
+  text-decoration: none;
 }
 
 div.active {
@@ -169,4 +203,43 @@ li a.smTag {
 li a.smTag:hover {
   background-color: rgb(45, 45, 45);
   color: #ffffff;
+}
+
+/* Features below Navigation Bar */
+
+.features{
+  display: flex;
+  justify-content: space-around;
+}
+
+.featureLarge, .featureSmall{
+  width: 48%;
+}
+
+.featureSmall{
+  display: flex;
+  flex-direction: column;
+  height: 630px;
+  justify-content: space-between;
+}
+
+.feature1, .feature2, .feature3{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 300px
+}
+
+.feature1{
+  background-image: url(womanLifting.jpg);
+  height:630px;
+}
+
+.feature2{
+  background-image: url(pushUp.jpg);
+}
+
+.feature3{
+  background-image: url(kidsRunning.jpg);
 }
