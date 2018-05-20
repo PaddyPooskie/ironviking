@@ -20,23 +20,23 @@
     <div class="mainBanner">
       <img src="logoCutout2.png" alt="" style="width:100%; height:500px; opacity: 0.7" />
       <div class="button">
-        <a href="signup.html">Sign up for our fitness program!</a>
+        <a href="ambassasdor.html">Check out our trainers</a>
       </div>
     </div>
     <div class="navbar">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li>
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Get Fit</button>
+            <button onclick="myFunction()" class="dropbtn" style="background-color: #374fce">Get Fit</button>
             <div id="myDropdown" class="dropdown-content">
               <a href="quickTips.html">Quick Tips</a>
               <a href="#about">My Plan</a>
-              <a href="signup.html">Sign-Up</a>
+              <a href="ambassador.html" class="active">Sign-Up</a>
             </div>
           </div>
         </li>
-        <li><a href="ambassador.html">Ambassadors</a></li>
+        <li><a href="#">Ambassadors</a></li>
       </ul>
       <img style="object-fit:contain; padding: 3px 0 3px 0;" src="logoNoText.png" alt="" />
       <div class="endNav">
@@ -47,21 +47,40 @@
         </ul>
       </div>
     </div>
-    <div class="features">
+    <div class="signup">
+      <h1>Sign Up Here</h1>
+      <h3>Fill out the form below to join our fitness program and get real one-on-one advice from a professional.</h3>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>
+            Information
+          </legend>
 
-      <div class="featureSmall">
-        <div class="feature2">
+          <label for="fName">
+        Name:
+        <input id="fName" type="text" placeholder="First Name" required name="FNAME"/>
+      </label>
+          <label for="lName">
+        Last Name:
+        <input id="lName" type="text" placeholder="Last Name" required name="LNAME"/>
+      </label>
+          <label for="email">
+        Email:
+        <input id="email" type="email" placeholder="Email" required name="EMAIL"/>
+      </label>
+          <label for="age">
+            Age:
+          <input id="age" type="number" min="18" max="99" required value="18" />
+        </label>
+        </fieldset>
+        <fieldset>
+          <label for="message">
+          <textarea id="message" rows="8" cols="150" placeholder="Let us know how we can help." name="MESSAGE" required></textarea>
+        </label>
+          <input type="submit" value="Submit" />
+        </fieldset>
 
-        </div>
-        <div class="feature3">
-
-        </div>
-      </div>
-      <div class="featureLarge">
-        <div class="feature1">
-
-        </div>
-      </div>
+      </form>
     </div>
     <footer>
       <div>

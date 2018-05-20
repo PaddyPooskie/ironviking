@@ -238,6 +238,13 @@ Features below Navigation Bar
   height: 630px;
 }
 
+/*---------------------------
+Sign Up form
+----------------------------*/
+.signup{
+  color: rgb(45,45,45);
+  text-align: center;
+}
 /*-----------------------------
 Image Models
 ------------------------------*/
