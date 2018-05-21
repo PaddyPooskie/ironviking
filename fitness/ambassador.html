@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Martel:900" rel="stylesheet">
+  <title>Fitness Planning</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="banner">
+      <a href="../index.html">
+        <img src="logo-transparent.png" alt="Iron Viking" />
+      </a>
+    </div>
+    <div class="mainBanner">
+      <img src="logoCutout2.png" alt="" style="width:100%; height:500px; opacity: 0.7" />
+      <div class="button">
+        <a href="signup.html">Sign up for our fitness program!</a>
+      </div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Get Fit</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="quickTips.html">Quick Tips</a>
+              <a href="#about">My Plan</a>
+              <a href="signup.html">Sign-Up</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="ambassador.html" class="active">Ambassadors</a></li>
+      </ul>
+      <img style="object-fit:contain; padding: 3px 0 3px 0;" src="logoNoText.png" alt="" />
+      <div class="endNav">
+        <ul>
+          <li><a href="../store/index.html">I-V Apparel</a></li>
+          <li><a href="https://www.instagram.com/ironvikingceo/?hl=en" target="_blank" class="smTag"><img src="instagram.png" alt="instagram"/></a></li>
+          <li><a href="https://www.facebook.com/ironvikingapparel/?modal=admin_todo_tour" target="_blank" class="smTag"><img src="facebook.png" alt="facebook" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="features" style="flex-direction: column;">
+      <h1 style="background-color: rgba(255,255,255,.5); color: rgb(45,45,45)">Our Ambassadors</h1>
+      <div class="sidebar">
+        <div class="tab">
+          <button class="tablinks" onclick="openAmbassador(event, 'Griffis')" id="defaultOpen">Austin Griffis (CEO)</button>
+          <button class="tablinks" onclick="openAmbassador(event, 'Smitty')">Smitty Werbenjagermanjensen</button>
+          <button class="tablinks" onclick="openAmbassador(event, 'Larry')">Larry the Lobster</button>
+          <button class="tablinks" onclick="openAmbassador(event, 'New')" style="background-color:rgba(55,79,206,.7)">Be an Ambassador</button>
+        </div>
+
+        <div id="Griffis" class="tabcontent">
+          <h3>Austin Griffis (CEO)</h3>
+          <img src="griffis.jpg" alt="" width="300" style="" />
+          <p>“Live Unafraid, Die Strong.” A simple phrase, synonymous with other phrases but this one rings true. I’ve been involved in plenty of harrowing situations where it was “me or the bad guy” as a police officer. Very quickly I realized peak physical
+            wellness was vital, not only in life or death situations but in everyday life as well. Never have I been afraid of danger, in that I personally study “Odinism” or Norse Mythology. Vikings knew their destiny so they lived and died unafraid
+            and strong. This lifestyle is what I wanted to instill in others. Steps by me were taken to promote combat preparedness and fitness in the county I patrolled by opening a free weight lifting class. This sparked my interest in powerlifting
+            and assisting others to achieve greatness. With some study I rapidly grew in size and strength, learning what I could from fitness pros like Jay Cutler, Kai Greene, Jim Stoppani and the like. In time I gained a handful of endorsements to competitively
+            lift. While I never placed in my competitions I learned so much from men and women above me. I took that experience and molded it into what you see today… The Iron Viking brand is here and I plan to outfit everyone in the best gym gear around!
+          </p>
+
+        </div>
+
+        <div id="Smitty" class="tabcontent">
+          <h3>Schmittywerberyegermanjensen</h3>
+          <img src="smitty.jpg" alt="" width="300" />
+          <p>He was number 1...</p>
+        </div>
+
+        <div id="Larry" class="tabcontent">
+          <h3>Larry the Lobster</h3>
+          <img src="larry.jpeg" alt="" width="300" />
+          <p>The strongest creature in the deep blue. Larry holds the record for the farthest anchor toss, and has broken his own record over 15 times.</p>
+        </div>
+
+        <div id="New" class="tabcontent">
+          <h3>Want to join our team of ambassadors?</h3>
+          <p>
+            If you are interested in sharing your fitness ideas with others, fill out the application below and we will review your information to decide if we could use you on our team.
+          </p>
+          <form method="get" action="thankyou.html">
+            <fieldset>
+              <legend>
+                Information
+              </legend>
+
+              <label for="fName">
+            Name:
+            <input id="fName" type="text" placeholder="First Name" required name="FNAME"/>
+          </label>
+              <label for="lName">
+            Last Name:
+            <input id="lName" type="text" placeholder="Last Name" required name="LNAME"/>
+          </label>
+              <label for="email">
+            Email:
+            <input id="email" type="email" placeholder="Email" required name="EMAIL"/>
+          </label>
+              <label for="age">
+                Age:
+              <input id="age" type="number" min="18" max="99" required value="18" name="AGE" />
+            </label>
+            </fieldset>
+            <label for="feet">
+              Height:
+            <input id="feet" type="number" min="4" max="8" required value="5" name="FEET"/>
+          </label>
+            <label for="inches">
+          <input id="inches" type="number" min="1" max="12" required value="9" name="INCHES"/>
+        </label>
+            <label for="weight">
+          Weight:
+        <input id="weight" type="number" min="89" max="499" required value="185" name="WEIGHT" />
+      </label>
+            <fieldset>
+              <label for="message">
+              <textarea id="message" rows="8" cols="100" placeholder="Tell us about yourself and your training experience." name="MESSAGE" maxlength="400" required></textarea>
+            </label>
+              <input type="submit" value="Submit" />
+            </fieldset>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>&copy; 2018 Iron Viking. All rights reserved.</p>
+      </div>
+      <div class="footLinks">
+        <a href="../index.html">Homepage</a>
+        <a href="#About">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="https://www.instagram.com/ironvikingceo/?hl=en" target="_blank" class="smTag"><img src="instagram.png" alt="instagram"/></a>
+        <a href="https://www.facebook.com/ironvikingapparel/?modal=admin_todo_tour" target="_blank" class="smTag"><img src="facebook.png" alt="facebook" /></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    function openAmbassador(evt, ambassadorName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(ambassadorName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
+</html>

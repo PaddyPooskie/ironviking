@@ -226,7 +226,7 @@ li a.smTag:hover {
   justify-content: space-between;
 }
 
-.feature1, .feature2, .feature3{
+.feature1, .feature2, .feature3, .featureSolo{
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +247,13 @@ li a.smTag:hover {
   background-image: url(kidsRunning.jpg);
 }
 
-.featureSmall a, .featureLarge a{
+.featureSolo{
+  background-image: url(thirtyOff.jpg);
+  width: 100%;
+  padding-bottom: 21px;
+}
+
+.featureSmall a, .featureLarge a, .featureSolo a{
   font-size: 30px;
   font-style: oblique;
   background-color: rgba(45,45,45,0.4);
