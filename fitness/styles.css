@@ -260,6 +260,14 @@ Features below Navigation Bar
   left: 30px;
 }
 
+.store {
+  color: rgb(45, 45, 45);
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .7);
+  text-align: center;
+  width:100%;
+}
+
 
 /*---------------------------
 Sign Up form
